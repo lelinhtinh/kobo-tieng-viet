@@ -8,7 +8,7 @@ Sách Tiếng Việt trên Kobo vẫn có thể đọc được khi chọn font 
 1. Tải **KoboPatch** [tại đây](https://pgaskin.net/kobopatch-patches/). Lưu ý chọn đúng version trên máy, file tải xuống sẽ có dạng **kobopatch_1.2.3456.zip**.
 1. Tải **Kobo Firmware** [tại đây](https://pgaskin.net/KoboStuff/kobofirmware.html), hoặc tìm link tải trực tiếp trên [MobileRead Wiki](https://wiki.mobileread.com/wiki/Kobo_Firmware_Releases). Lưu ý chọn đúng version và dòng máy, file tải xuống sẽ có dạng **kobo-update-1.2.3456.zip**.
 1. Giải nén **KoboPatch**, chép **Kobo Firmware** vào thư mục **src** _(không giải nén firmware)_.
-1. Tải [repo này](https://github.com/lelinhtinh/kobo-tieng-viet/archive/master.zip) và giải nén. Chép thư mục **overwrite-fonts** vào **src**.
+1. Tải [lelinhtinh/kobo-tieng-viet](https://github.com/lelinhtinh/kobo-tieng-viet/archive/master.zip) và giải nén. Chép thư mục **overwrite-fonts** vào **src**.
 1. Sửa file **kobopatch.yaml**, thêm vào cuối:
 
     ```yaml
@@ -52,7 +52,7 @@ Sách Tiếng Việt trên Kobo vẫn có thể đọc được khi chọn font 
 
 ## Các công cụ & nguồn tham khảo
 
-- [Google Font](https://fonts.google.com/?category=Serif,Sans+Serif&subset=vietnamese&stylecount=4): TÌm font hỗ trợ Tiếng Việt.
+- [Google Font](https://fonts.google.com/?category=Serif,Sans+Serif&subset=vietnamese&stylecount=4): Tìm font hỗ trợ Tiếng Việt.
 - [FontForge](http://fontforge.github.io/): Công cụ đổi thông tin Font sang `Avenir Next` và `Georgia`.
 - [KoboPatch - An improved patching system](https://www.mobileread.com/forums/showthread.php?t=297338): Hướng dẫn và hỗ trợ của chính tác giả KoboPatch.
 - [KoboPatch users & non-Kobo-supported languages](https://www.mobileread.com/forums/showthread.php?t=323350): Chủ đề thảo luận về các phương pháp dùng KoboPatch để hỗ trợ ngôn ngữ không chính thức.
