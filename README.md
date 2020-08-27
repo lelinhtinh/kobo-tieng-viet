@@ -8,7 +8,7 @@ Sách Tiếng Việt trên Kobo vẫn có thể đọc được khi chọn font 
 1. Tải **KoboPatch** [tại đây](https://pgaskin.net/kobopatch-patches/). Lưu ý chọn đúng version trên máy, file tải xuống sẽ có dạng **kobopatch_1.2.3456.zip**.
 1. Tải **Kobo Firmware** [tại đây](https://pgaskin.net/KoboStuff/kobofirmware.html), hoặc tìm link tải trực tiếp trên [MobileRead Wiki](https://wiki.mobileread.com/wiki/Kobo_Firmware_Releases). Lưu ý chọn đúng version và dòng máy, file tải xuống sẽ có dạng **kobo-update-1.2.3456.zip**.
 1. Giải nén **KoboPatch**, chép **Kobo Firmware** vào thư mục **src** _(không giải nén firmware)_.
-1. Tải [lelinhtinh/kobo-tieng-viet](https://github.com/lelinhtinh/kobo-tieng-viet/archive/master.zip) và giải nén. Chép thư mục **overwrite-fonts** vào **src**.
+1. Tải [kobo-tieng-viet](https://github.com/lelinhtinh/kobo-tieng-viet/archive/master.zip) và giải nén. Chép thư mục **overwrite-fonts** vào **src**.
 1. Sửa file **kobopatch.yaml**, thêm vào cuối:
 
     ```yaml
@@ -31,7 +31,7 @@ Sách Tiếng Việt trên Kobo vẫn có thể đọc được khi chọn font 
 ## Cài từ điển Anh-Việt
 
 1. Tải **DictUtil** bản mới nhất [tại đây](https://github.com/pgaskin/dictutil/releases/latest). Lưu ý chỉ tải file DictUtil, nếu dùng Windows thì chọn **dictutil-windows.exe**.
-1. Chép **DictUtil** vào thư mục chứa từ điển **dicthtml-en-vi.zip** và **dicthtml-vi-en.zip**. Nếu bạn đã tải repo này khi sửa font ở trên, thì chúng nằm trong thư mục **dict** _(không phải trong máy Kobo)_.
+1. Chép **DictUtil** vào thư mục chứa từ điển **dicthtml-en-vi.zip** và **dicthtml-vi-en.zip**. Nếu bạn đã tải kobo-tieng-viet khi sửa font ở trên, thì chúng nằm trong thư mục **dict** _(không phải trong máy Kobo)_.
 1. Kết nối Kobo với máy tính. Tại thư mục chứa từ điển và DictUtil, chạy lệnh:
 
     ```bash
