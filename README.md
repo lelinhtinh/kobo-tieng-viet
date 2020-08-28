@@ -30,6 +30,12 @@ Sách Tiếng Việt trên Kobo vẫn có thể đọc được khi chọn font 
     ... nếu dùng Windows.
 4. Thực hiện **eject ổ USB** để ngắt kết nối Kobo.
 
+## Ảnh chụp màn hình
+
+|Giới thiệu|Trang đọc|Mục lục|Ghi chú|Tra từ điển|
+|:-:|:-:|:-:|:-:|:-:|
+|[![screen_001.png](./screenshot/screen_001.png)](./screenshot/screen_001.png)|[![screen_002.png](./screenshot/screen_002.png)](./screenshot/screen_002.png)|[![screen_003.png](./screenshot/screen_003.png)](./screenshot/screen_003.png)|[![screen_004.png](./screenshot/screen_004.png)](./screenshot/screen_004.png)|[![screen_005.png](./screenshot/screen_005.png)](./screenshot/screen_005.png)|
+
 ## Công cụ & nguồn tham khảo
 
 - [Google Font](https://fonts.google.com/?category=Serif,Sans+Serif&subset=vietnamese&stylecount=4): Tìm font hỗ trợ Tiếng Việt.
@@ -44,3 +50,4 @@ Sách Tiếng Việt trên Kobo vẫn có thể đọc được khi chọn font 
 - [Cách tạo font Tiếng Việt](https://github.com/lelinhtinh/kobo-tieng-viet/wiki/C%C3%A1ch-t%E1%BA%A1o-font-Ti%E1%BA%BFng-Vi%E1%BB%87t-cho-Kobo)
 - [Convert từ điển StarDict sang DictZip](https://github.com/lelinhtinh/kobo-tieng-viet/wiki/T%E1%BB%B1-t%E1%BA%A1o-t%E1%BB%AB-%C4%91i%E1%BB%83n-cho-Kobo)
 - [Các giải pháp khác để hiển thị Tiếng Việt](https://github.com/lelinhtinh/kobo-tieng-viet/wiki/C%C3%A1c-gi%E1%BA%A3i-ph%C3%A1p-kh%C3%A1c-%C4%91%E1%BB%83-hi%E1%BB%83n-th%E1%BB%8B-Ti%E1%BA%BFng-Vi%E1%BB%87t-tr%C3%AAn-Kobo)
+- [Một số thủ thuật đơn giản](https://github.com/lelinhtinh/kobo-tieng-viet/wiki/M%E1%BB%99t-s%E1%BB%91-th%E1%BB%A7-thu%E1%BA%ADt-%C4%91%C6%A1n-gi%E1%BA%A3n-cho-Kobo)
