@@ -38,7 +38,7 @@ Sách Tiếng Việt trên Kobo vẫn có thể đọc được khi chọn font 
 
 ## Công cụ & nguồn tham khảo
 
-- [Google Font](https://fonts.google.com/?category=Serif,Sans+Serif&subset=vietnamese&stylecount=4): Tìm font hỗ trợ Tiếng Việt.
+- [Google Fonts](https://fonts.google.com/?category=Serif,Sans+Serif&subset=vietnamese&stylecount=4): Tìm font hỗ trợ Tiếng Việt.
 - [FontForge](http://fontforge.github.io/): Công cụ đổi thông tin font sang `Avenir Next` và `Georgia`.
 - [Stardict VI](https://github.com/dynamotn/stardict-vi): Nguồn từ điển Tiếng Việt.
 - [Index of Custom Dictionaries for Kobo eReader](https://www.mobileread.com/forums/showthread.php?t=232883): Danh sách các từ điển làm sẵn bao gồm Anh-Việt.
