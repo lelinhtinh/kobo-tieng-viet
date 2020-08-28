@@ -1,38 +1,18 @@
-# Hướng dẫn sửa lỗi font Tiếng Việt cho máy đọc sách Kobo
+# Sửa lỗi font Tiếng Việt cho máy đọc sách Kobo
 
-Sách Tiếng Việt trên Kobo vẫn có thể đọc được khi chọn font `Kobo Nickel`, tuy nhiên tên sách, mục lục, ... sẽ bị lỗi do font hệ thống không hỗ trợ. Cách sửa lỗi này là ghi đè font `Avenir Next` và `Georgia` bằng font có hỗ trợ Tiếng Việt nhờ công cụ [KoboPatch](https://github.com/pgaskin/kobopatch).
+Sách Tiếng Việt trên Kobo vẫn có thể đọc được khi chọn font `Kobo Nickel`, tuy nhiên tên sách, mục lục, ... sẽ bị lỗi do font hệ thống không hỗ trợ. Cách sửa lỗi này là ghi đè font `Avenir Next` và `Georgia` bằng font có hỗ trợ Tiếng Việt.
 
-## Các bước thực hiện
+## Hướng dẫn
 
-1. Xem thông tin **version** hiện tại trên máy Kobo: **Settings > Device informantion > Software version**.
-1. Tải **KoboPatch** [tại đây](https://pgaskin.net/kobopatch-patches/). Lưu ý chọn đúng version trên máy, file tải xuống sẽ có dạng **kobopatch_1.2.3456.zip**.
-1. Tải **Kobo Firmware** [tại đây](https://pgaskin.net/KoboStuff/kobofirmware.html), hoặc tìm link tải trực tiếp trên [MobileRead Wiki](https://wiki.mobileread.com/wiki/Kobo_Firmware_Releases). Lưu ý chọn đúng version và dòng máy, file tải xuống sẽ có dạng **kobo-update-1.2.3456.zip**.
-1. Giải nén **KoboPatch**, chép **Kobo Firmware** vào thư mục **src** _(không giải nén firmware)_.
-1. Tải [kobo-tieng-viet](https://github.com/lelinhtinh/kobo-tieng-viet/archive/master.zip) và giải nén. Chép thư mục **overwrite-fonts** vào **src**.
-1. Sửa file **kobopatch.yaml**, thêm vào cuối:
+1. Kết nốt Kobo với máy tính.
+2. Tải **KoboRoot.tgz** [tại đây](https://github.com/lelinhtinh/kobo-tieng-viet/releases/latest) và chép vào thư mục **.kobo**.
+3. Thực hiện **eject ổ USB** để ngắt kết nối Kobo an toàn, tránh lỗi dữ liệu. Chờ một lúc để máy khởi động lại.
 
-    ```yaml
-    files:
-      src/overwrite-fonts/AvenirNext-Bold.ttf: usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/Avenir-Bold.ttf
-      src/overwrite-fonts/AvenirNext-BoldItalic.ttf: usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/Avenir-BoldItalic.ttf
-      src/overwrite-fonts/AvenirNext-Italic.ttf: usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/Avenir-Italic.ttf
-      src/overwrite-fonts/AvenirNext-Regular.ttf: usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/Avenir.ttf
-      src/overwrite-fonts/Georgia-Regular.ttf: usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/georgia.ttf
-      src/overwrite-fonts/Georgia-Bold.ttf: usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/georgiab.ttf
-      src/overwrite-fonts/Georgia-Italic.ttf: usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/georgiai.ttf
-      src/overwrite-fonts/Georgia-BoldItalic.ttf: usr/local/Trolltech/QtEmbedded-4.6.2-arm/lib/fonts/georgiaz.ttf
-    ```
+### Cài từ điển Anh-Việt
 
-1. Chạy **kobopatch.bat** trên Windows, hoặc **kobopatch.sh** nếu dùng Linux.
-1. Khi tiến trình hoàn tất sẽ tạo ra file **KoboRoot.tgz** trong thư mục **out**.
-1. Kết nốt Kobo với máy tính, chép **KoboRoot.tgz** vào thư mục **.kobo**.
-1. Thực hiện **eject ổ USB** để ngắt kết nối Kobo an toàn, tránh lỗi dữ liệu. Chờ một lúc để máy khởi động lại.
-
-## Cài từ điển Anh-Việt
-
-1. Tải **DictUtil** bản mới nhất [tại đây](https://github.com/pgaskin/dictutil/releases/latest). Lưu ý chỉ tải file DictUtil, nếu dùng Windows thì chọn **dictutil-windows.exe**.
-1. Chép **DictUtil** vào thư mục chứa từ điển **dicthtml-en-vi.zip** và **dicthtml-vi-en.zip**. Nếu bạn đã tải kobo-tieng-viet khi sửa font ở trên, thì chúng nằm trong thư mục **dict** _(không phải trong máy Kobo)_.
-1. Kết nối Kobo với máy tính. Tại thư mục chứa từ điển và DictUtil, chạy lệnh:
+1. Tải **DictUtil** bản mới nhất [tại đây](https://github.com/pgaskin/dictutil/releases/latest), tùy theo hệ điều hành, nếu dùng Windows thì chọn **dictutil-windows.exe**.
+2. Tải **dicthtml-en-vi.zip** và **dicthtml-vi-en.zip** [tại đây](https://github.com/lelinhtinh/kobo-tieng-viet/releases/latest), lưu vào cùng thư mục vừa tải DictUtil.
+3. Kết nối Kobo với máy tính. Tại thư mục chứa từ điển và DictUtil, chạy lệnh:
 
     ```bash
     chmod +x dictutil-linux-64bit
@@ -48,14 +28,12 @@ Sách Tiếng Việt trên Kobo vẫn có thể đọc được khi chọn font 
     ```
 
     ... nếu dùng Windows.
-1. Thực hiện **eject ổ USB** để ngắt kết nối Kobo an toàn, tránh lỗi dữ liệu.
+4. Thực hiện **eject ổ USB** để ngắt kết nối Kobo an toàn, tránh lỗi dữ liệu.
 
-## Các công cụ & nguồn tham khảo
+### Công cụ & nguồn tham khảo
 
 - [Google Font](https://fonts.google.com/?category=Serif,Sans+Serif&subset=vietnamese&stylecount=4): Tìm font hỗ trợ Tiếng Việt.
-- [FontForge](http://fontforge.github.io/): Công cụ đổi thông tin Font sang `Avenir Next` và `Georgia`.
-- [KoboPatch - An improved patching system](https://www.mobileread.com/forums/showthread.php?t=297338): Hướng dẫn và hỗ trợ của chính tác giả KoboPatch.
-- [KoboPatch users & non-Kobo-supported languages](https://www.mobileread.com/forums/showthread.php?t=323350): Chủ đề thảo luận về các phương pháp dùng KoboPatch để hỗ trợ ngôn ngữ không chính thức.
+- [FontForge](http://fontforge.github.io/): Công cụ đổi thông tin font sang `Avenir Next` và `Georgia`.
 - [Stardict VI](https://github.com/dynamotn/stardict-vi): Nguồn từ điển Tiếng Việt.
 - [Index of Custom Dictionaries for Kobo eReader](https://www.mobileread.com/forums/showthread.php?t=232883): Danh sách các từ điển làm sẵn bao gồm Anh-Việt.
 - [Penelope](https://github.com/BOOKEEN/penelope): Công cụ chuyển đổi từ điển sang định dạng Kobo hỗ trợ.
@@ -73,6 +51,7 @@ Xem hướng dẫn [KoboPatch users & non-Kobo-supported languages](https://www.
 
 #### Nhược điểm
 
+- Cần nhiều thao tác.
 - Lỗi font ở một số vị trí Nickel CSS không hỗ trợ như Book Details.
 
 </details>
