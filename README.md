@@ -4,7 +4,7 @@ Sách Tiếng Việt trên Kobo vẫn có thể đọc được khi chọn font 
 
 ## Thay thế font hệ thống
 
-1. Kết nốt Kobo với máy tính.
+1. Kết nối Kobo với máy tính.
 2. Tải **KoboRoot.tgz** [tại đây](https://github.com/lelinhtinh/kobo-tieng-viet/releases/latest) và chép vào thư mục **.kobo**.
 3. Thực hiện **eject ổ USB** để ngắt kết nối Kobo an toàn, tránh lỗi dữ liệu. Chờ một lúc để máy khởi động lại.
 
@@ -51,3 +51,4 @@ Sách Tiếng Việt trên Kobo vẫn có thể đọc được khi chọn font 
 - [Convert từ điển StarDict sang DictZip](https://github.com/lelinhtinh/kobo-tieng-viet/wiki/T%E1%BB%B1-t%E1%BA%A1o-t%E1%BB%AB-%C4%91i%E1%BB%83n-cho-Kobo)
 - [Các giải pháp khác để hiển thị Tiếng Việt](https://github.com/lelinhtinh/kobo-tieng-viet/wiki/C%C3%A1c-gi%E1%BA%A3i-ph%C3%A1p-kh%C3%A1c-%C4%91%E1%BB%83-hi%E1%BB%83n-th%E1%BB%8B-Ti%E1%BA%BFng-Vi%E1%BB%87t-tr%C3%AAn-Kobo)
 - [Một số thủ thuật đơn giản](https://github.com/lelinhtinh/kobo-tieng-viet/wiki/M%E1%BB%99t-s%E1%BB%91-th%E1%BB%A7-thu%E1%BA%ADt-%C4%91%C6%A1n-gi%E1%BA%A3n-cho-Kobo)
+- [Cách downgrade về phiên bản cũ](https://github.com/lelinhtinh/kobo-tieng-viet/wiki/H%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-h%E1%BA%A1-c%E1%BA%A5p-Kobo-v%E1%BB%81-phi%C3%AAn-b%E1%BA%A3n-c%C5%A9-h%C6%A1n)
