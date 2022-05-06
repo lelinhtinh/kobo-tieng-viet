@@ -4,8 +4,8 @@ set -e
 lv_version=v1.1.0
 dictutil_version=v0.3.2
 
-echo Installing dependencies
-sudo apt install dictzip python-dev-is-python3 python-is-python3 p7zip-full
+echo Install dependencies
+sudo apt install dictzip python-is-python3 python3-pip p7zip-full
 python -m pip install marisa-trie lxml
 git clone https://github.com/pettarin/penelope.git
 cd penelope
@@ -43,13 +43,13 @@ lang_name() {
 convert() {
     from=$1
     to=$2
-    echo -n Converting $from-$to
+    echo -n Convert $from-$to
 
     path="$(lang_name $from)-$(lang_name $to)"
     if [ $from = zh ] || [ $to = zh ]; then
         path+="_Simplified-Character"
     fi
-    # Downloading LacViet dictionary
+    # Download LacViet dictionary
     wget https://github.com/Meigyoku-Thmn/LacVietExtract/releases/download/$lv_version/LacViet_$path.7z -O temp.7z
     7z e temp.7z -otemp
 
@@ -68,7 +68,7 @@ convert() {
     # https://sed.js.org/?gist=909b87ca4fa1c7dffcd1bb757bde62fc
     grep -rl '<a name=".*".*"/>' ./dicthtml-$from-$to | xargs sed -i 's@\(<a name="\)"\?\([^"]\+\)"\(\([^"]\+\)"\?\)\?\(\([^"]\+\)"\?\)\?\(\([^"]\+\)"\?\)\?\("/>\)@\1\2\4\6\8\9@g'
     # Add style to dictfiles
-    grep -rl '<link rel="stylesheet" href="style.css"/>' ./dicthtml-$from-$to | xargs sed -i 's@<link rel="stylesheet" href="style.css"\/>@🔒@;s@<link rel="stylesheet" href="style.css"\/>@@g;s@🔒@'"<style>$(cat style.min.css)<\/style>"'@'
+    grep -rl '<link rel="stylesheet" href="style.css"/>' ./dicthtml-$from-$to | xargs sed -i 's@<link rel="stylesheet" href="style.css"\/>@'"<style>$(cat style.min.css)<\/style>"'@g'
     ./dictutil pack dicthtml-$from-$to -o ./dict/dicthtml-$from-$to.zip
 
     # Cleanup
