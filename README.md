@@ -23,8 +23,8 @@ Sách Tiếng Việt trên Kobo vẫn có thể đọc được khi chọn font 
     hoặc:
 
     ```bash
-    dictutil-windows.exe install dicthtml-en-vi.zip
-    dictutil-windows.exe install dicthtml-vi-en.zip
+    ./dictutil-windows.exe install dicthtml-en-vi.zip
+    ./dictutil-windows.exe install dicthtml-vi-en.zip
     ```
 
     ... nếu dùng Windows.
