@@ -11,7 +11,7 @@ Sách Tiếng Việt trên Kobo vẫn có thể đọc được khi chọn font 
 ## Cài từ điển Anh-Việt
 
 1. Tải **DictUtil** bản mới nhất [tại đây](https://github.com/pgaskin/dictutil/releases/latest), tùy theo hệ điều hành, nếu dùng Windows thì chọn **dictutil-windows.exe**.
-2. Tải **dicthtml-en-vi.zip** và **dicthtml-vi-en.zip** [tại đây](https://github.com/lelinhtinh/kobo-tieng-viet/releases/latest), lưu vào cùng thư mục vừa tải DictUtil.
+2. Tải **dicthtml-en-vi.zip** và **dicthtml-vi-en.zip** [tại đây](https://github.com/lelinhtinh/kobo-tieng-viet/releases/tag/v0.4.0), lưu vào cùng thư mục vừa tải DictUtil.
 3. Kết nối Kobo với máy tính. Tại thư mục chứa từ điển và DictUtil, chạy lệnh:
 
     ```bash
